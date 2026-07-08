@@ -7,7 +7,11 @@ spring:
     active: dev
   cloud:
     config:
-      profile: qa
+      profile: dev
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
 limits-service:
   minimum: 2
   maximum: 999
